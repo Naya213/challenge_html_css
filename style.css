@@ -1,0 +1,293 @@
+@charset "UTF-8";
+html,body{
+  background-color: #FFF;
+  padding: 0;
+  margin: 0;
+  font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+.container,.about{
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+/*------------------------------------------------*/
+.First-view{
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*------------------------------------------------*/
+header,.MainNav ul,.About .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header{
+  padding: 0 40px;
+}
+.header-logo{
+  width: 200px;
+  
+}
+header .MainNav ul{
+  padding-left: 0;
+}
+header .MainNav li{
+  text-align: center;
+  font-size: 5px;
+  font-family: 'Lato',sans-serif;
+  list-style:none;
+  padding: 5px 13px;
+}
+header .MainNav li::first-line {
+  font-weight: bold;
+  font-size: 13px;
+}
+header .MainNav li a{
+  display: block;
+}
+.MainNav li.header-link{
+  font-weight: normal;
+  background-color: #f79214;
+  padding: 10px 15px;
+  margin-left: 30px;
+  border-radius: 20px;
+}
+
+.header-link a{
+  color: #fff;
+  font-weight: normal;
+}
+.HambergarNav{
+  display: none;
+}
+.HambergarNav span{
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin-bottom: 7px;
+  background-color: #000;
+  border-radius: 5px;
+}
+.HambergarNav span:last-child{
+  margin-bottom: 0px;
+}
+/*------------------------------------------------*/
+h1{
+  text-align: center;
+  font-size: 35px;
+  margin: 0;
+}
+.top{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.top .content{
+  width: 50%;
+}
+.top .content .img-wrapper{
+  text-align: center;
+  margin: 20px auto;
+}
+.top .content img{
+  vertical-align: middle;
+}
+.top .content a{
+  display: block;
+  background-color: #f79214;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 30px;
+}
+.top p{
+  font-size: 11px;
+  color: #bbb;
+  margin-top: 80px;
+}
+/*------------------------------------------------*/
+.About{
+  background-color: #f79214;
+  padding: 15px 0;
+}
+.About video,.About .content{
+  width: 50%;
+}
+.About .content h2{
+  font-size: 35px;
+  margin: 0;
+}
+.About .content{
+  padding: 50px 30px 25px 30px;
+  color: #fff;
+}
+.About .content p{
+  font-size: 16px;
+  margin: 5px 0;
+}
+.About .content img{
+  width: 30%;
+  padding: 15px 0;
+}
+
+/*------------------------------------------------*/
+.header-logo,.header-link,.top .content a{
+  transition-property: all;
+  transition-duration: 0.25s;
+}
+.header-link:hover{
+  opacity: 0.7;
+}
+.header-logo:hover{
+  opacity: 0.7;
+}
+.top .content a:hover{
+  opacity: 0.7;
+}
+
+/*------------------------------------------------*/
+@media screen and (max-width: 599px) {
+  .First-view{
+    width: 100%;
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg.webp);
+    background-size: 100%;
+    background-position: 0% 0%;
+    position: relative;
+    padding-top: 50px;
+    margin-top: 50px;
+  }
+    header{
+    width: auto;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+  .header-logo{
+    width: 50%;
+    padding-top: 5px;
+  }
+  .MainNav{            
+    display: none;
+  }         
+  .HambergarNav{
+    display: block;
+  }
+  .container{
+    padding: 0 20px;
+  }
+  .top .content{
+    width: 100%;
+  }
+  .top{
+   padding-top: 210px;
+   padding-bottom: 20px;
+  }
+  .top h1{
+    font-size: 25px;
+  }
+  .top .img-wrapper img{
+    width: 25%;
+    margin: 0 2px;
+  }
+  .top .img-wrapper img:nth-child(2){
+    width: 40%;
+  }
+  .top>p{
+    margin-top: 15px;
+  }
+  .About{
+    padding: 40px 0;
+  }
+  .About .container{
+    flex-flow: column;
+    justify-content: center;
+  }
+  .About .content{
+    padding:  0;
+  }
+  .About video,.About h2{
+    padding-bottom: 20px;
+  }
+  .About video,.About .content{
+    width: 100%;
+  }
+  .About .content h2{
+    width: 80%;
+  }
+  .About .content img{
+    box-sizing: border-box;
+    display: block;
+    padding: 15px 0 0 0;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+/*------------------------------------------------*/
+@media screen and (max-width: 1024px){
+  .First-view{
+    background-size: cover;
+    background-position: 60% 0%;
+    position: relative;
+    padding-top: 50px;
+    margin-top: 50px;
+  }
+  header{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 40px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+  .header-logo{
+    width: 50%;
+    padding-top: 5px;
+  }
+  .MainNav{            
+    display: none;
+  }         
+  .HambergarNav{
+    display: block;
+  }
+  .container{
+    padding: 0 40px;
+  }
+  .top .content{
+    width: 60%;
+  }
+   .About{
+    padding: 40px 0;
+  }
+  .About .container{
+    flex-flow: column;
+    justify-content: center;
+  }
+  .About .content{
+    padding:  0;
+  }
+  .About video,.About h2,.About .content p{
+    padding-bottom: 20px;
+  }
+  .About video,.About .content{
+    width: 85%;
+  }
+  .About .content img{
+    box-sizing: border-box;
+    display: block;
+    padding: 15px 0 0 0;
+    width: 30%;
+    margin: 0 auto;
+  }
+}
